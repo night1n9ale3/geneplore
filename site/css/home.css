@@ -22,9 +22,53 @@
     justify-content: space-around;
 }
 
+.discord {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subscriptions {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ultra {
+    margin-bottom: -490px;
+}
+
+@media screen and (max-width: 1170px) {
+    .subscriptions {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        row-gap: 50px;
+    }
+
+    .ultra {
+        margin-left: 250px;
+    }
+}
+
 @media screen and (max-width:1020px) {
     .column {
         gap: 20px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .media-link {
+        display: none !important;
+    }
+
+    .subscriptions {
+        grid-template-columns: none;
+    }
+
+    .ultra {
+        margin-left: 0;
     }
 }
 
@@ -35,6 +79,21 @@
 
     .column {
         gap: 30px;
+    }
+
+    .discord {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .discord-title {
+        font-family: 'Noto Sans';
+        text-align: center;
+    }
+
+    .discord-text {
+        font-family: 'Noto Sans';
+        text-align: center;
     }
 }
 
