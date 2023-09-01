@@ -40,6 +40,42 @@
     margin-bottom: -490px;
 }
 
+footer {
+    margin-top: 200px;
+
+}
+
+.geneplore2 {
+    width: 350px;
+}
+
+.bot-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.learn-more {
+    position: relative;
+    display: inline-flex;
+    padding: 15px 60px;
+    color: #141414;
+    background: #fff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+    font-weight: medium;
+    margin-top: 20px;
+}
+
+.learn-more:hover {
+    cursor: pointer;
+    transition: 1s;
+    background: indigo;
+    color: white;
+}
+
 @media screen and (max-width: 1170px) {
     .subscriptions {
         display: grid;
@@ -70,6 +106,22 @@
     .ultra {
         margin-left: 0;
     }
+
+    .geneplore2 {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .geneplore2 {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:820) {
+    .geneplore2 {
+        width: 240px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -79,6 +131,11 @@
 
     .column {
         gap: 30px;
+    }
+
+    .bot-sec {
+        display: grid;
+        row-gap: 20px;
     }
 
     .discord {
@@ -94,6 +151,16 @@
     .discord-text {
         font-family: 'Noto Sans';
         text-align: center;
+    }
+
+    footer {
+        height: 520px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    footer {
+        height: 650px;
     }
 }
 
