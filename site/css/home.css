@@ -61,19 +61,27 @@ footer {
     display: inline-flex;
     padding: 15px 60px;
     color: #141414;
-    background: #fff;
+    background: #ffffff00;
     border-radius: 40px;
     letter-spacing: 1px;
     font-family: 'Montserrat';
     font-weight: medium;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .learn-more:hover {
     cursor: pointer;
-    transition: 1s;
-    background: indigo;
+    transition: 0.4s;
+    background: indigo radial-gradient(circle, transparent 1%, #7100c1 1%) center/15000%;
     color: white;
+}
+
+.learn-more:active {
+    cursor: pointer;
+    transition: background 0.3s;
+    background: #9500ff;
+    color: white;
+    background-size: 100%;
 }
 
 @media screen and (max-width: 1170px) {
@@ -95,9 +103,6 @@ footer {
 }
 
 @media screen and (max-width:890px) {
-    .media-link {
-        display: none !important;
-    }
 
     .subscriptions {
         grid-template-columns: none;
