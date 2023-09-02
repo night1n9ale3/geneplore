@@ -15,6 +15,12 @@
     width: 30px;
 }
 
+.cookie-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .column {
     margin-top: 20px;
     display: flex;
@@ -206,6 +212,10 @@ footer {
 
     .bot-sec {
         padding-left: 10px;
+    }
+
+    .cookie-buttons {
+        display: grid;
     }
 }
 
