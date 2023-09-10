@@ -13,6 +13,119 @@
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <title>Geneplore AI</title>
+    <style>
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 400;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 400;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLightItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 100;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 100;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 200;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 200;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 300;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 300;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 500;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRoman.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 500;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRomanItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 600;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 600;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediumItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 700;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBold.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 700;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBoldItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 900;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 900;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlackItalic.woff) format('woff')
+        }
+    </style>
 </head>
 
 <body style="height: 1600px;" class="bg-#F5F5F5 dark:bg-gray-900">
@@ -85,10 +198,11 @@
                 </div>
             </div>
         </nav>
-        <div class="belowbar fixed bottom-0 right-0 left-0 z-50 w-full h-16 border-t border-gray-200 bg-white dark:bg-gray-700 dark:border-gray-600"
+        <div class="belowbar fixed bottom-0 right-0 left-0 z-50 w-full h-16 bg-white dark:bg-gray-600"
             style="margin: auto;">
             <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-                <button type="button" class="inline-flex flex-col items-center justify-center px-5 bg-blue-500">
+                <button type="button"
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 bg-blue-500">
                     <svg class="w-6 h-6 mb-1 text-white" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path
@@ -98,7 +212,7 @@
                     <span style="font-size: 13px;" class="text-white">Home</span>
                 </button>
                 <button type="button"
-                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                         class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
                         viewBox="0 0 16 16">
@@ -109,7 +223,7 @@
                         href='#' style='font-size: 13px;'>About</a>
                 </button>
                 <button type="button"
-                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
                     <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -119,7 +233,7 @@
                         href='#' style='font-size: 13px;'>Subscribe</a>
                 </button>
                 <button type="button"
-                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    class="inline-flex border-l border-r border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
                     <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                         <path
@@ -128,32 +242,75 @@
                     <a class="text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
                         href='https://geneplore.readme.io/reference/start' style='font-size: 13px;'>Article</a>
                 </button>
+
             </div>
         </div>
     </header>
     <main>
-        <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1"
-            class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-            style="max-width: 400px; width: 100%; top: 60%;">
-            <div class="relative w-full max-w-2xl max-h-full">
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <div class="flex items-center gap-6 p-5 border-b rounded-t dark:border-gray-600">
-                        <img src="https://www.svgrepo.com/show/30963/cookie.svg" width="35px" height="35px" alt="...">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            We use cookie files
-                        </h3>
-                    </div>
-                    <div
-                        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <button data-modal-hide="bottom-right-modal" type="button"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
-                            Accept</button>
-                        <button data-modal-hide="bottom-right-modal" type="button"
-                            class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
-                    </div>
+        <div id="sticky-banner" tabindex="-1" style="top: 60%; left: 1%;"
+            class="fixed top-0 left-0 z-50 flex rounded-lg justify-between p-4 border border-gray-400 bg-purple-400"
+            style="max-width: 400%; width: 100%;">
+            <div class="relative rounded-lg bg-purple-400">
+                <div class="flex gap-2 items-start justify-between p-4 border-b rounded-t">
+                    <img src="https://www.svgrepo.com/show/30963/cookie.svg" width="35px" alt="...">
+                    <h3 class="text-xl font-semibold text-gray-900">
+                        We use cookie files
+                    </h3>
+                </div>
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                    <button data-dismiss-target="#sticky-banner" type="button"
+                        class="text-white bg-indigo-900 hover:bg-blue-500 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                        Accept</button>
+                    <button data-dismiss-target="#sticky-banner" type="button"
+                        class="text-gray-500 bg-indigo-300 hover:bg-gray-100 focus:outline-none rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Decline</button>
                 </div>
             </div>
+            <div class="flex items-center">
+                <button data-dismiss-target="#sticky-banner" style="position: relative; bottom: 43%;" type="button"
+                    class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-white hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close banner</span>
+                </button>
+            </div>
         </div>
+        <!-- <div id="staticModal" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            style="max-width: 400px; width: 100%; top: 70%;">
+            <div class="relative w-full max-w-2xl max-h-full">
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            We use cookie files
+                        </h3>
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="staticModal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                        </button>
+                    </div>
+                    Modal footer
+        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button data-modal-hide="staticModal" type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Accept</button>
+            <button data-modal-hide="staticModal" type="button"
+                class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div> -->
         <section
             style="background-image: url(/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
@@ -167,7 +324,7 @@
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                     <a href="#"
                         class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                         Join to the server
+                        Join to the server
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -584,7 +741,7 @@
                     more</a>
             </div>
             <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
-                src="https://wallpapers.com/images/hd/discord-logo-geometric-art-5barh6w9jxj5mhzw.jpg" alt="">
+                src="https://wallpapers.com/images/hd/discord-logo-geometric-art-5barh6w9jxj5mhzw.jpg" class="rounded-lg" alt="...">
         </section>
 
         <section class="api bg-gray-300 dark:bg-gray-700 p-8">
@@ -600,92 +757,8 @@
                     more</a>
             </div>
             <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
-                src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" alt="">
+                src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" class="rounded-lg" alt="...">
         </section>
-        <h1 style="margin-top: 150px;" class="tracking-tight font-bold text-4xl text-center dark:text-white">Our Bots
-            and Models</h1>
-        <section class="bot-sec">
-            <div class="grid gap-6">
-                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
-                    The best bot in the
-                    server - ChatGPT</h1>
-                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
-                    class="text-xl text-gray-500 font-bold dark:text-gray-300">ChatGPT
-                    is the best and most popular bot on the server and it's so famous for its versatility, but however
-                    the name does not limit its ability to work, it has 7 models (not counting the two premium models)
-                    that everyone can use whenever they want, and moreover, the AI ​​has behaviors that can also be
-                    controlled as models, if you want it can for example become very funny, smart or even crazy! But
-                    that's still not the end, ChatGPT also has a moderation mode that project contributors can use to
-                    expel or silence a rule breaker, resulting in a comfortable and adequate chat conversation.
-                    Also, this bot can become an image generator, and even a video.
-                    <br>
-                    <br>
-                    All detailed information as always in our discord server!
-                    <br>
-                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
-                        href="https://discord.gg/geneplore">Learn more</a>
-                </p>
-            </div>
-            <div style="background: linear-gradient(45deg, rgb(94, 0, 123), rgb(155, 0, 202),  rgb(225, 0, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
-                class="p-8">
-                <img src="https://images-ext-1.discordapp.net/external/r-clU1hvLB8zPPy87ywHdYNvZQn-U6U1LMA8-Y-ciEM/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1089317211652509811/029d486e00123ee9ab2eccc0e5110c0f.png?width=500&height=500"
-                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
-            </div>
-        </section>
-        <section class="bot-sec">
-            <div style="background: linear-gradient(45deg, rgb(3, 0, 162), rgb(0, 57, 202),  rgb(0, 86, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
-                class="p-8">
-                <img src="https://cdn.discordapp.com/avatars/294882584201003009/4bfd18c35f26a86f2b5b4eb2ad81a1f7.png?size=1024"
-                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
-            </div>
-            <div class="grid gap-6">
-                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
-                    Bot for events and giveaways</h1>
-                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
-                    class="text-xl text-gray-500 font-bold dark:text-gray-300">A Giveaway Bot in Discord is a powerful
-                    and user-friendly bot designed to facilitate and manage giveaways within a Discord server. With its
-                    robust features and customization options, it simplifies the process of organizing and conducting
-                    giveaways, ensuring fairness and transparency.
-                    This bot allows server administrators to effortlessly set up giveaways by specifying crucial details
-                    like the prize, duration, entry requirements, and the number of winners.
-                    <br>
-                    The Giveaway Bot also automates notifications and reminders related to the giveaway
-                    <br>
-                    <br>
-                    You can read more information about GiveawayBot in their site - giveawaybot.party!
-                    <br>
-                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
-                        href="https://giveawaybot.party">Learn more</a>
-                </p>
-            </div>
-        </section>
-        <section class="bot-sec">
-            <div class="grid gap-6">
-                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
-                    Discord bots and servers finder - Top.gg</h1>
-                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
-                    class="text-xl text-gray-500 font-bold dark:text-gray-300">Top.gg is a popular Discord bot that
-                    offers an extensive range of features and utilities to enhance your Discord server. With numerous
-                    commands and customizable settings, this bot aims to make managing and moderating your community a
-                    breeze.
-                    <br>
-                    One of the key features of top.gg is its advanced moderation tools. It provides auto-moderation
-                    features such as anti-spam filters, word filters, and anti-raid protection.
-                    <br>
-                    <br>
-                    just click the button to enter the top.gg's website, you can also add the bot to the server!
-                    <br>
-                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
-                        href="https://top.gg">Learn more</a>
-                </p>
-            </div>
-            <div style="background: linear-gradient(45deg, rgb(58, 0, 0), rgb(142, 0, 0),  rgb(244, 61, 61)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
-                class="p-8">
-                <img src="https://images-ext-2.discordapp.net/external/BOtt8KzmrwzNHtIETlgppeHkaByOqjLTOMQFPvNL1Hg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/422087909634736160/d41e1166aadbba1fd62f6c43e2a15777.png?width=500&height=500"
-                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
-            </div>
-        </section>
-
         <section style="margin-top: 200px;">
             <h1 class="tracking-tight text-center font-bold text-4xl dark:text-white">Statistics</h1>
             <div class="border-t border-gray-200 dark:border-gray-600" style="margin-top: 50px;">
@@ -927,40 +1000,8 @@
                     font-family: 'Montserrat' ; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subcribe</a>
             </div>
         </section>
-        <section style="margin-top: 600px;">
-            <h1 class="text-center text-3xl tracking-tight text-gray-900 dark:text-white" style="margin-bottom: 10px;">
-                Connect with us</h1>
-            <form style="max-width: 1440px; margin: auto; padding: 50px; border: 1px solid #d4d4d4;">
-                <div class="relative z-0 mb-6 group"
-                    style="max-width: 1300px; width: 100%; margin: auto; margin-bottom: 20px;">
-                    <input type="text" style="max-width: 1300px; width: 100%;" name="email" id="floating_email"
-                        class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                        placeholder=" " required />
-                    <label for="floating_email"
-                        class="peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                        Adress</label>
-                </div>
-                <div class="relative z-0 mb-6 group"
-                    style="max-width: 1300px; margin: auto; width: 100%; margin-bottom: 50px;">
-                    <input type="text" name="name" style="max-width: 1300px; margin: auto; width: 100%;"
-                        id="floating_name"
-                        class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                        placeholder=" " required />
-                    <label for="floating_name"
-                        class="peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
-                </div>
-                <textarea name="text" id="message" rows="4"
-                    style="font-family: 'Montserrat'; font-weight: 600; max-width: 1300px; width: 100%; margin: auto; padding-top: 20px; height: 200px;"
-                    class="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Type something..."></textarea>
-
-                <input type="submit" name="submit" value="Submit"
-                    style="justify-content: end; margin-top: 50px; padding: 15px 60px;"
-                    class="text-white rounded-full bg-gradient-to-r from-purple-600 to-blue-700 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium text-lg text-center mb-4">
-            </form>
-        </section>
     </main>
-    <footer class="bg-white dark:bg-gray-900">
+    <footer style="margin-top: 600px;" class="bg-white dark:bg-gray-900">
         <hr>
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:items-center" style="gap: 100px; justify-content: space-around;">
