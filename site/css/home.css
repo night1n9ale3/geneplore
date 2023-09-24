@@ -3,12 +3,16 @@
     padding-top: 10px;
 }
 
-.nav-ul {
-    gap: 30px;
+.sidebar {
+    display: none !important;
 }
 
 .lang-span2 {
     display: none;
+}
+
+.nav-ul {
+    gap: 30px;
 }
 
 .nav-home {
@@ -42,6 +46,22 @@
 }
 
 .nav-link:hover {
+    color: #8e0fc5;
+    background-size: 100% 4px;
+}
+
+.anm-link {
+    display: block;
+    display: inline-flex;
+    text-decoration: none;
+    background: linear-gradient(to right, #6f0ada, #911ef7);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0% 4px;
+    transition: background-size 0.5s ease;
+}
+
+.anm-link:hover {
     color: #8e0fc5;
     background-size: 100% 4px;
 }
@@ -180,13 +200,9 @@ footer {
     }
 }
 
-@media screen and (max-width:910px) {
+@media screen and (max-width:900px) {
     .lang-span {
         display: none;
-    }
-
-    .lang-span2 {
-        display: block;
     }
 }
 
@@ -210,6 +226,11 @@ footer {
 }
 
 @media screen and (max-width:860px) {
+
+    .svg-icon {
+        width: 27px;
+    }
+
     .geneplore2 {
         width: 260px;
     }
@@ -263,9 +284,9 @@ footer {
 }
 
 @media screen and (max-width:767px) {
-    .belowbar {
+    /* .belowbar {
         display: block;
-    }
+    } */
 
     .column {
         gap: 30px;
@@ -290,6 +311,22 @@ footer {
     footer {
         height: 520px;
     }
+
+    .column {
+        display: grid;
+    }
+
+    .lang-button {
+        display: none !important;
+    }
+
+    #theme-toggle {
+        display: none;
+    }
+
+    .svg-icon {
+        display: none;
+    }
 }
 
 @media screen and (max-width:710px) {
@@ -304,9 +341,10 @@ footer {
     }
 }
 
-@media screen and (max-width:600px) {
-    .column {
-        display: grid;
+@media screen and (max-width:639px) {
+
+    .sidebar {
+        display: block !important;
     }
 }
 
@@ -352,10 +390,6 @@ footer {
     .geneplore {
         width: 240px;
     }
-
-    .lang-span2 {
-        display: none;
-    }
 }
 
 @media screen and (max-width:440px) {
@@ -370,7 +404,7 @@ footer {
     }
 
     .svg-icon {
-        width: 28px;
+        display: none;
     }
 
     .navbar {
@@ -381,10 +415,6 @@ footer {
 @media screen and (max-width:420px) {
     .geneplore {
         width: 210px;
-    }
-
-    .svg-icon {
-        width: 26px;
     }
 
     .navbar {
@@ -406,7 +436,7 @@ footer {
     }
 }
 
-@media screen and (max-width:400px) {
+/* @media screen and (max-width:400px) {
     .geneplore {
         width: 190px;
     }
@@ -458,4 +488,4 @@ footer {
     .svg-icon {
         width: 16px;
     }
-}
+} */
