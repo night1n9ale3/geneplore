@@ -77,5 +77,4 @@ themeToggleBtn2.addEventListener('click', function () {
             localStorage.setItem('color-theme', 'dark');
         }
     }
-
 });
