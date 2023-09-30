@@ -51,7 +51,7 @@
     background-size: 100% 4px;
 }
 
-.anm-link {
+.und-link {
     display: block;
     display: inline-flex;
     text-decoration: none;
@@ -62,7 +62,7 @@
     transition: background-size 0.5s ease;
 }
 
-.anm-link:hover {
+.und-link:hover {
     color: #8e0fc5;
     background-size: 100% 4px;
 }
@@ -178,7 +178,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: -webkit-linear-gradient(75deg, #310066, #ba43ff 80%);
+    background: -webkit-linear-gradient(75deg, #2d0053, #d522d5 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
